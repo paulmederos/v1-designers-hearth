@@ -2,6 +2,13 @@ module.exports = (grunt) ->
   grunt.initConfig
     pkg: grunt.file.readJSON("package.json")
 
+    # concat:
+    #   options:
+    #     separator: ';'
+    #   dist:
+    #     src: ['bower_components/jquery/dist/jquery.min.js']
+    #     dest: 'assets/js/vendor.js'
+
     sass:
       dist:
         files:
@@ -15,13 +22,6 @@ module.exports = (grunt) ->
         src: ["*.coffee"]
         dest: "assets/js/"
         ext: ".js"
-
-    concat:
-      options:
-        separator: ';'
-      dist:
-        src: ['bower_components/jquery/dist/jquery.min.js']
-        dest: 'assets/js/scripts.js'
 
     watch:
       css:
@@ -37,4 +37,4 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-contrib-concat"
   grunt.loadNpmTasks "grunt-contrib-watch"
 
-  grunt.registerTask "default", ["concat", "watch"]
+  grunt.registerTask "default", ["watch"]
