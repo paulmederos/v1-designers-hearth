@@ -733,13 +733,23 @@ section {
   background-color: #FF9456;
   cursor: pointer; }
   .footer .button {
-    max-width: 14em;
+    width: 92%;
+    max-width: 18em;
     border-radius: 6px;
     border-color: white;
     padding: .75em 1.5em;
     color: white;
-    margin: 0 auto; }
+    margin: 1.5em auto; }
+    @media (max-width: 30em) {
+      .footer .button {
+        padding: .75em; } }
   .footer .overlay {
     background-image: linear-gradient(0deg, rgba(250, 217, 97, 0.8) 0%, rgba(247, 107, 27, 0.4) 100%); }
+
+.footer-meetup {
+  background-color: #e0393e; }
+
+.footer-facebook {
+  background-color: #3b5998; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -426,16 +426,27 @@ section {
   cursor: pointer;
 
   .button {
-    max-width: 14em;
+    width:92%;
+    max-width: 18em;
     border-radius:6px;
     border-color:white;
     padding:.75em 1.5em;
     color:white; 
-    margin:0 auto;
+    margin:1.5em auto;
+
+    @include mq-personal { padding: .75em; }
   }
 
   .overlay {
     background-image: linear-gradient(0deg, rgba(250,217,97,0.80) 0%, rgba(247,107,27,0.40) 100%);
   }
+}
+
+.footer-meetup {
+  background-color: rgb(224, 57, 62);
+}
+
+.footer-facebook {
+  background-color: rgb(59, 89, 152);
 }
 
